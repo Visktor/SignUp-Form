@@ -4,7 +4,18 @@
     box-sizing: border-box;
 }
 
+aside{
+    height: 100vh;
+    width: 30vw;
+    background-color: black;
+}
+
 body{
+    display: flex;
+    gap: 20vw;
+}
+
+main{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,15 +28,22 @@ body{
     display: flex;
     flex-direction: column;
     height: max-content;
+    gap: 10px;
 }
 
 
 .inner-couple{
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .couple{
     display: flex;
-    gap: 0 30px;
+    gap:30px;
+
+}
+
+button{
+    margin-top:20px;
 }
