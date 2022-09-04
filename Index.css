@@ -2,17 +2,26 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 aside {
     min-height: 100vh;
     width: 30vw;
-    background-color: black;
+    background:url(./pexels-kamil-zubrzycki-1245066.jpg);
+    background-size:cover;
+
+    display:flex;
+    align-items: flex-end;
+}
+
+aside p{
+    font-size:0.8rem;
 }
 
 body {
     display: flex;
-
+    background-color: black;
 }
 
 main {
@@ -38,7 +47,7 @@ form{
     flex-direction: column;
     height: max-content;
     gap: 20px;
-    background-color: azure;
+    background-color: black;
     width: 70vw;
     padding: 20px 0 20px 1vw;
 }
@@ -67,18 +76,33 @@ button {
     margin-left: 30px;
     width: 180px;
     height: 45px;
+    cursor: pointer;
 }
 
 input{
     height: 30px;
     width: 100%;
+    border: 1px solid red;
+    border-radius: 3px;
+    color:red;
 }
 
 label{
     font-size: 0.9rem;
+    font-family: fantasy, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 input:focus{
-    border:none;
-    outline: 1px solid red;
+    outline: none;
+    box-shadow: 0 0 1pt 1pt red;
+}
+
+.login{
+    color:red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.loginp{
+    margin-left: 1vw;
 }
