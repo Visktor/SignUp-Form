@@ -8,15 +8,15 @@
 aside {
     min-height: 100vh;
     width: 30vw;
-    background:url(./pexels-kamil-zubrzycki-1245066.jpg);
-    background-size:cover;
+    background: url(./pexels-kamil-zubrzycki-1245066.jpg);
+    background-size: cover;
 
-    display:flex;
+    display: flex;
     align-items: flex-end;
 }
 
-aside p{
-    font-size:0.8rem;
+aside p {
+    font-size: 0.8rem;
 }
 
 body {
@@ -32,11 +32,11 @@ main {
     gap: 1vw;
 }
 
-h2{
-    margin-left:1vw;
+h2 {
+    margin-left: 1vw;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 1.4vh;
@@ -69,7 +69,7 @@ form{
 button {
     font-size: 1rem;
     font-weight: bold;
-    color:white;
+    color: white;
     background-color: green;
     border: none;
     border-radius: 7px;
@@ -79,30 +79,50 @@ button {
     cursor: pointer;
 }
 
-input{
+input {
     height: 30px;
     width: 100%;
-    border: 1px solid red;
+    border: 1px solid grey;
     border-radius: 3px;
-    color:red;
+    color: red;
 }
 
-label{
+label {
     font-size: 0.9rem;
     font-family: fantasy, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-input:focus{
+input:focus {
     outline: none;
-    box-shadow: 0 0 1pt 1pt red;
+    box-shadow: 0 0 1pt 2pt yellow;
 }
 
-.login{
-    color:red;
+input:focus:valid {
+    box-shadow: 0 0 1pt 2pt green;
+}
+
+input:focus:invalid {
+    box-shadow: 0 0 1pt 2pt red;
+}
+
+input::placeholder {
+    color: #4d4d4d;
+}
+
+.error {
+    box-shadow: 0 0 1pt 2pt red;
+}
+
+.login {
+    color: red;
     font-weight: bold;
     text-decoration: none;
 }
 
-.loginp{
+.loginp {
     margin-left: 1vw;
+}
+
+.invalid {
+    box-shadow: 0 0 1pt 2pt red !important;
 }
